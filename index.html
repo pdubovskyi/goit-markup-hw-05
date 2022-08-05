@@ -51,7 +51,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn btn" type="button">
+          <button class="hero-btn btn" type="button" data-modal-open>
             <span class="hero-btn-text">Заказать услугу</span>
           </button>
         </div>
@@ -115,12 +115,21 @@
           <ul class="works-list list">
             <li class="works-list-item">
               <img src="./images/img-1.jpg" alt="верстка сайтов" width="370" />
+              <div class="work-item-attachment">
+                <p class="work-item-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="works-list-item">
               <img src="./images/img-2.jpg" alt="адаптивная верстка сайтов" width="370" />
+           <div class="work-item-attachment">
+                <p class="work-item-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="works-list-item">
               <img src="./images/img-3.jpg" alt="адаптация изображения" width="370" />
+           <div class="work-item-attachment">
+                <p class="work-item-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -341,6 +350,18 @@
         </div>
       </section>
 
+
+        <!-------------BACKDROP------------->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close" type="button" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+              <use href="./images/modal-close.svg#icon-close-black-18dp-2-1-1"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer">
@@ -404,5 +425,8 @@
         </div>
       </div>
     </footer>
+
+     <script src="./js/modal.js"></script>
+</body>
   </body>
 </html>
